@@ -11,7 +11,7 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
-URL: https://github.com/ateucher/libminer2
+URL: https://github.com/ateucher/libminer2, http://andyteucher.ca/libminer2/
 BugReports: https://github.com/ateucher/libminer2/issues
 Suggests: 
     testthat (>= 3.0.0)

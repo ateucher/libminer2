@@ -4,6 +4,8 @@
 # libminer2
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/ateucher/libminer2/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ateucher/libminer2/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of libminer2 is to provide a summary of a user’s R libraries.
@@ -28,10 +30,10 @@ This is a basic example which shows you how to solve a common problem:
 library(libminer2)
 
 lib_summary()
-#>                                                                                       library
-#> 1                        /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library
-#> 2 /private/var/folders/_f/n9fw7ctx3fqf2ty9ylw502g80000gn/T/RtmpwFb5IO/temp_libpath412b23e2494
-#> 3                                                     /Users/andy/Library/R/arm64/4.3/library
+#>                                                                                        library
+#> 1                         /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library
+#> 2 /private/var/folders/_f/n9fw7ctx3fqf2ty9ylw502g80000gn/T/RtmpwFb5IO/temp_libpath412b24134cf9
+#> 3                                                      /Users/andy/Library/R/arm64/4.3/library
 #>   n_packages
 #> 1         29
 #> 2          1
@@ -39,10 +41,10 @@ lib_summary()
 
 # You can also ask it to calculate sizes:
 lib_summary(sizes = TRUE)
-#>                                                                                       library
-#> 1                        /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library
-#> 2 /private/var/folders/_f/n9fw7ctx3fqf2ty9ylw502g80000gn/T/RtmpwFb5IO/temp_libpath412b23e2494
-#> 3                                                     /Users/andy/Library/R/arm64/4.3/library
+#>                                                                                        library
+#> 1                         /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library
+#> 2 /private/var/folders/_f/n9fw7ctx3fqf2ty9ylw502g80000gn/T/RtmpwFb5IO/temp_libpath412b24134cf9
+#> 3                                                      /Users/andy/Library/R/arm64/4.3/library
 #>   n_packages   lib_size
 #> 1         29   71351828
 #> 2          1      14424

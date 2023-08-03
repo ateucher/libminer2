@@ -1,0 +1,44 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# libminer2
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of libminer2 is to provide a summary of a user's R libraries. It's a toy package developed in a workshop and not meant for serious use.
+
+## Installation
+
+You can install the development version of libminer2 from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("ateucher/libminer2")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(libminer2)
+
+lib_summary()
+
+# You can also ask it to calculate sizes:
+lib_summary(sizes = TRUE)
+```
+

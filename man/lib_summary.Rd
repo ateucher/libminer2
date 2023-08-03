@@ -4,7 +4,11 @@
 \alias{lib_summary}
 \title{R Library Summary}
 \usage{
-lib_summary()
+lib_summary(sizes = FALSE)
+}
+\arguments{
+\item{sizes}{a logical indicating whether or not to calculate
+sizes}
 }
 \value{
 A data.frame containing the count
@@ -16,4 +20,5 @@ libraries on your machine
 }
 \examples{
 lib_summary()
+lib_summary(sizes = TRUE)
 }

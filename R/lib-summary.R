@@ -20,10 +20,21 @@ lib_summary <- function(sizes = FALSE) {
   names(pkg_df) <- c("library", "n_packages")
 
   if (sizes) {
-    pkg_df$lib_size <- map_dbl(
-      pkg_df$library,
-        ~ sum(fs::file_size(fs::dir_ls(.x, recurse = TRUE)))
-    )
+    pkg_df <- calculate_sizes(pkg_df)
   }
   pkg_df
+}
+
+#' calculate sizes
+#'
+#' @param df a data.frame
+#'
+#' @return df with a lib_size column
+#' @noRd
+calculate_sizes <- function(df) {
+  df$lib_size <- map_dbl(
+    df$library,
+    ~ sum(fs::file_size(fs::dir_ls(.x, recurse = TRUE)))
+  )
+  df
 }
